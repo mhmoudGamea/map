@@ -28,7 +28,7 @@ class NearByViewBodyState extends State<NearByViewBody> {
 
   Future<void> getNearbyPlaces() async {
     final url = Uri.parse(
-        'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=-33.86,151.20&radius=1500&type=restaurant&keyword=cruise&key=AIzaSyBZVZnN4k4oM8HdJ6xUfQ3Mkx2vzX0oMk4');
+        'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=-33.86,151.20&radius=1500&type=restaurant&keyword=cruise&key=kk');
     final response = await http.post(url);
     print(jsonDecode(response.body));
     // make your own model that will contain this rsponse
